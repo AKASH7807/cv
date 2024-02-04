@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <span id="homename">NAME</span>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Exerience</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="left">
+            <img src="desktop6.png" id="image">
+        </div>
+        <div class="right">
+            <p>Hello, i,m</p>
+            <h2 id="hometitle">My Name</h2>
+            <h4 id="job">Frontend Developer</h4>
+            <div class="button">
+                <button class="download"><a href="img.jpg" download="resume modal" >Download CV</a></button>
+                <button class="contact">Contact Info</button>
+            </div>
+        </div>
+    </div>
+
+<script>
+
+    const myname =  localStorage.getItem('myname');
+    const passion = localStorage.getItem('passion');
+
+    document.getElementById('homename').textContent = myname;
+    document.getElementById('hometitle').textContent = myname;
+    document.getElementById('job').textContent = passion;
+
+</script>
+</body>
+</html>

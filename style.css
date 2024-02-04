@@ -1,0 +1,167 @@
+@font-face {
+    font-family: "font1";
+    src: url(Exima\ Geometric.ttf);
+}
+
+@font-face {
+    font-family: "font2";
+    src: url(waltograph42.otf);
+}
+
+@font-face {
+    font-family: "font3";
+    src: url("Yasmen.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #DCDCDC;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    box-shadow: -2px 2px 3px #333;
+    background: linear-gradient(45deg, pink, skyblue);
+    margin: 0px 5px;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+}
+
+nav span {
+    padding-left: 25px;
+    line-height: 50px;
+    font-size: 1.5rem;
+    animation: nav 1s;
+    transition: 1s;
+    font-weight: 700;
+    font-family: "font1";
+    color: #242424;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 50px;
+    margin-right: 20px;
+    animation: slide 1s;
+}
+
+nav ul li a {
+    font-size: 19px;
+    transition: 1s;
+    font-family: "font2";
+    color: #333;
+
+}
+
+
+/* ANIMATION SECTION */
+
+
+nav ul li a:hover {
+    color: #FF69B4;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s;
+    text-decoration: underline;
+    text-decoration-color: #FF69B4;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(20px);
+        transition: 1s;
+    }
+
+}
+
+@keyframes nav {
+    0% {
+        position: fixed;
+        transform: translateX(-30px);
+        transition: 1s;
+    }
+}
+
+/* CONTENT SECTION START */
+
+.container {
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.container .left img {
+    width: 150px;
+    margin-left: 15px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px #333;
+    background-position: center;
+}
+
+.container .right p {
+    font-size: 18px;
+    color: #555;
+    font-family: "font3";
+}
+
+.container .right h2 {
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: "font3";
+}
+
+.container .right h4 {
+    font-size: 17px;
+    color: #333;
+    font-family: "font1";
+}
+
+.button {
+    margin: 5px 0px;
+}
+
+button {
+    margin-bottom: 10px;
+    margin-right: 5px;
+    padding: 7px 13px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: "font3";
+    background: #acacac;
+    box-shadow: 2px 2px 2px #333;
+    transition: 1s;
+}
+
+.contact {
+    background: #e4e4e4;
+    color: #333;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
